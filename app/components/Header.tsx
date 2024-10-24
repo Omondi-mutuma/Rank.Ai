@@ -13,11 +13,13 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="flex items-center justify-between px-4 py-[13px] md:px-8 lg:gap-[74px] lg:justify-center">
-      <div className="logo">
-        <Image src="/logo.svg" alt="Logo" width={39} height={38} />
+    <header className="sticky top-0 border-b border-white border-opacity-15 flex items-center justify-between px-4 py-[13px] md:px-8 lg:justify-center">
+      <div className="w-full logo">
+        <a href="#">
+          <Image src="/logo.svg" alt="Logo" width={39} height={38} />
+        </a>
       </div>
-      <nav className="border border-white border-opacity-15 rounded-full hidden md:block">
+      <nav className="w-full border border-white border-opacity-15 rounded-full hidden md:block">
         <ul className="flex space-x-4 py-2 px-10 gap-[30px] list-none">
           {navLinks.map((link) => (
             <li key={link.name}>
@@ -32,16 +34,15 @@ const Header: React.FC = () => {
           ))}
         </ul>
       </nav>
-      <div className="hidden md:block border border-white border-opacity-15 w-max p-[4px] rounded-[12px]">
+      <div className="w-full hidden md:flex md:justify-end">
         <Button>Join waitlist</Button>
       </div>
 
-      <div className="flex items-center md:hidden">
-        <div className="mr-4 border border-white border-opacity-15 w-max p-[4px] rounded-[12px]">
-          <Button className="text-sm" size="small">
-            Join waitlist
-          </Button>
-        </div>
+      <div className="flex items-center mr-4 md:hidden">
+        <Button className="text-sm" size="small">
+          Join waitlist
+        </Button>
+
         <button className="text-2xl" onClick={toggleMenu}>
           {isMenuOpen ? <HiX size={32} /> : <HiMenu size={32} />}
         </button>
