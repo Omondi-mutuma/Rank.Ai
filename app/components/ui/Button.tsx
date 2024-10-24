@@ -31,17 +31,19 @@ const Button: React.FC<ButtonProps> = ({
     "box-border flex flex-row justify-center items-center gap-2.5 rounded-lg font-regular text-[14px] tracking-[-0.01em] leading-[26px] focus:outline-none focus:ring-2 focus:ring-offset-2";
 
   return (
-    <button
-      {...props}
-      className={`
-        ${baseClasses}
-        ${sizeClasses[size]}
-        ${colorClasses[color]}
-        ${props.className || ""}
-      `}
-    >
-      {children}
-    </button>
+    <div className="border border-white border-opacity-15 w-max p-[4px] rounded-[12px]">
+      <button
+        {...props}
+        className={`
+          ${baseClasses}
+          ${sizeClasses[size]}
+          ${colorClasses[color]}
+          ${props.className || ""}
+        `}
+      >
+        {children}
+      </button>
+    </div>
   );
 };
 
