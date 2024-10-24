@@ -3,7 +3,7 @@ import Header from "./components/Header";
 
 export default function Home() {
   return (
-    <div className="px-[40px] md:px-[100px] min-h-screen flex flex-col">
+    <div className="px-[20px] md:px-[100px] min-h-screen flex flex-col">
       <Header />
 
       <main className="flex-grow p-8">

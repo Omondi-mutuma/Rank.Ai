@@ -13,7 +13,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="sticky top-0 border-b border-white border-opacity-15 flex items-center justify-between px-4 py-[13px] md:px-8 lg:justify-center">
+    <header className="sticky top-0 border-b border-white border-opacity-15 flex items-center justify-between py-[13px] md:px-8 lg:justify-center">
       <div className="w-full logo">
         <a href="#">
           <Image src="/logo.svg" alt="Logo" width={39} height={38} />
@@ -38,7 +38,7 @@ const Header: React.FC = () => {
         <Button>Join waitlist</Button>
       </div>
 
-      <div className="flex items-center mr-4 md:hidden">
+      <div className="flex items-center gap-2 md:hidden">
         <Button className="text-sm" size="small">
           Join waitlist
         </Button>
