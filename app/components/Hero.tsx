@@ -8,15 +8,15 @@ const Hero: React.FC = () => {
   return (
     <section className="flex flex-col justify-center items-center gap-[10px] my-10">
       {/* Badge section */}
-      <div className="flex box-border text-[14px] font-regular text-custom-purple gap-2 justify-center items-center px-[14px] py-[8px] border border-white/15 rounded-[40px] bg-background">
+      <div className="flex box-border text-[14px] md:text-[16px] font-regular text-custom-purple gap-2 justify-center items-center px-[14px] py-[8px] border border-white/15 rounded-[40px] bg-background">
         <p className="p-[6px] rounded-full bg-custom-purple text-[10px] font-bold text-black">
           NEW
         </p>
         Latest integrations in artificial intelligence.
       </div>
       {/* Hero content section */}
-      <div className="flex flex-col items-center justify-center text-center gap-4">
-        <h1 className="text-[48px] font-semibold tracking-[-0.0525em] leading-[52px] bg-gradient-to-b from-white to-custom-purple text-transparent bg-clip-text">
+      <div className="border flex flex-col items-center justify-center text-center gap-4">
+        <h1 className="text-[48px] md:text-[82px] font-semibold tracking-[-0.0525em] leading-[52px] md:leading-[86px] bg-gradient-to-b from-white to-custom-purple text-transparent bg-clip-text">
           Boost your rankings with AI.
         </h1>
         <p className="px-4 font-normal text-[18px] leading-[26px] tracking-[-0.001em]">
@@ -34,6 +34,14 @@ const Hero: React.FC = () => {
           alt="mobile view of app"
           width={356}
           height={257}
+          className="md:hidden"
+        />
+        <Image
+          src={"/app-desktop.png"}
+          alt="mobile view of app"
+          width={1098}
+          height={658}
+          className="hidden md:block"
         />
         <div className="absolute -bottom-5 left-0 h-full w-full bg-gradient-to-b from-transparent to-[#050208] via-transparent z-10" />
       </div>
