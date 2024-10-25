@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
         Latest integrations in artificial intelligence.
       </div>
       {/* Hero content section */}
-      <div className="border flex flex-col items-center justify-center text-center gap-4">
+      <div className="flex flex-col items-center justify-center text-center gap-4 max-w-[600px]">
         <h1 className="text-[48px] md:text-[82px] font-semibold tracking-[-0.0525em] leading-[52px] md:leading-[86px] bg-gradient-to-b from-white to-custom-purple text-transparent bg-clip-text">
           Boost your rankings with AI.
         </h1>
@@ -27,6 +27,8 @@ const Hero: React.FC = () => {
           Start for free
         </Button>
       </div>
+      <div className="hidden lg:block absolute w-[569px] h-[569px] left-1/2 -top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-purple-900 filter blur-[60px]" />
+      <div className="hidden lg:block absolute w-[269px] h-[269px] left-1/2 top-3/4 transform -translate-x-1/2 bg-purple-900 filter blur-[60px] -z-10" />
       {/* Image section */}
       <div className="relative p-px flex justify-center items-center mt-5 bg-gradient-to-r from-[#0D0718] to-[#0B0614] border border-transparent rounded-[10px] shadow-[0px_-20px_70px_rgba(140,69,255,0.25)] shadow-[0px_-19px_70px_rgba(140,69,255,0.4)]">
         <Image
