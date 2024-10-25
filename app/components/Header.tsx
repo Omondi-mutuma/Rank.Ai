@@ -13,13 +13,13 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="sticky top-0 border-b border-white border-opacity-15 flex items-center justify-between py-[13px] md:px-8 lg:justify-center">
+    <header className="sticky top-0 border-b border-white border-opacity-15 flex items-center justify-between py-[13px] bg-black lg:justify-center">
       <div className="w-full logo">
         <a href="#">
           <Image src="/logo.svg" alt="Logo" width={39} height={38} />
         </a>
       </div>
-      <nav className="w-full border border-white border-opacity-15 rounded-full hidden md:block">
+      <nav className="w-full border border-white border-opacity-15 rounded-full hidden lg:block">
         <ul className="flex space-x-4 py-2 px-10 gap-[30px] list-none">
           {navLinks.map((link) => (
             <li key={link.name}>
@@ -34,11 +34,11 @@ const Header: React.FC = () => {
           ))}
         </ul>
       </nav>
-      <div className="w-full hidden md:flex md:justify-end">
+      <div className="w-full hidden lg:flex lg:justify-end">
         <Button>Join waitlist</Button>
       </div>
 
-      <div className="flex items-center gap-2 md:hidden">
+      <div className="flex items-center gap-2 lg:hidden">
         <Button className="text-sm" size="small">
           Join waitlist
         </Button>
@@ -48,7 +48,7 @@ const Header: React.FC = () => {
         </button>
       </div>
       {isMenuOpen && (
-        <div className="absolute top-16 left-0 right-0 bg-background shadow-md md:hidden">
+        <div className="absolute top-16 left-0 right-0 bg-background shadow-md lg:hidden">
           <ul className="flex flex-col  items-center py-2 px-10 gap-[30px]">
             {navLinks.map((link) => (
               <li key={link.name} className="py-2">
