@@ -6,7 +6,7 @@ import Image from "next/image";
 // Define the Hero component
 const Hero: React.FC = () => {
   return (
-    <section className="flex flex-col justify-center items-center gap-[10px] my-10">
+    <section className="flex flex-col justify-center items-center gap-[10px] my-10 transition-all">
       {/* Badge section */}
       <div className="flex box-border text-[14px] md:text-[16px] font-regular text-custom-purple gap-2 justify-center items-center px-[14px] py-[8px] border border-white/15 rounded-[40px] bg-background">
         <p className="p-[6px] rounded-full bg-custom-purple text-[10px] font-bold text-black">
