@@ -1,4 +1,5 @@
 "use client";
+import Clients from "./components/Clients";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 
@@ -11,7 +12,7 @@ export default function Home() {
         <div className="w-full h-full">
           <svg
             width="1032"
-            height="970"
+            height="900"
             viewBox="0 0 1032 970"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -93,6 +94,7 @@ export default function Home() {
           </svg>
         </div>
         <Hero />
+        <Clients />
       </main>
 
       <footer className="p-4 text-center">
