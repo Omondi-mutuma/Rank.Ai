@@ -43,7 +43,7 @@ const Header: React.FC = () => {
           Join waitlist
         </Button>
 
-        <button className="text-2xl" onClick={toggleMenu}>
+        <button className="text-2xl" onClick={toggleMenu} name="menu">
           {isMenuOpen ? <HiX size={32} /> : <HiMenu size={32} />}
         </button>
       </div>
