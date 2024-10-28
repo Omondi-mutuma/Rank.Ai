@@ -19,7 +19,7 @@ const BentoItem: React.FC<{ features: Feature[] }> = ({ features }) => {
       {features.map((feature) => (
         <div
           key={feature.id}
-          className={`relative col-span-1 border border-white/15 rounded-[10px] min-h-[400px] p-[20px] ${feature.className} overflow-hidden transition-transform duration-300 `}
+          className={`relative border border-white/15 rounded-[10px] min-h-[400px] p-[20px] ${feature.className} overflow-hidden transition-transform duration-300 `}
           role="article" // Semantic role for accessibility
         >
           {feature.hasBackground && (

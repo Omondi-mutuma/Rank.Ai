@@ -100,8 +100,7 @@ export const features: FeaturesList[] = [
     subtitle:
       "Perform complex SEO audits and optimizations with a single click.",
     hasBackground: true,
-    className:
-      "col-span-2 bg-gradient-to-b from-bg-background to-custom-purple",
+    className: "col-span-2 sm:col-span-1",
 
     imgHeight: 652,
     imgWidth: 1098,
@@ -119,6 +118,30 @@ export const features: FeaturesList[] = [
     imgWidth: 633,
     position: "absolute top-[20px] left-0 h-full w-full",
     id: "869",
+  },
+  {
+    image: "/3d-triangle.png",
+    title: "Smart Keyword Generator",
+    subtitle: "Automatic suggestions and the best keywords to target.",
+    hasBackground: false,
+    className: "col-span-1",
+
+    imgHeight: 244,
+    imgWidth: 234,
+    position: "flex justify-center items-center",
+    id: "858",
+  },
+  {
+    image: "/3d-triangle.png",
+    title: "Smart Keyword Generator",
+    subtitle: "Automatic suggestions and the best keywords to target.",
+    hasBackground: false,
+    className: "col-span-1",
+
+    imgHeight: 244,
+    imgWidth: 234,
+    position: "flex justify-center items-center",
+    id: "858",
   },
   {
     image: "/3d-triangle.png",
