@@ -3,6 +3,7 @@ import Clients from "./components/Clients";
 import Features from "./components/Features";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Integrations from "./components/Integrations";
 
 export default function Home() {
   return (
@@ -97,6 +98,7 @@ export default function Home() {
         <Hero />
         <Clients />
         <Features />
+        <Integrations />
       </main>
 
       <footer className="p-4 text-center">

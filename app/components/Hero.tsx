@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
           Boost your rankings with AI.
         </h1>
         <p className="px-4 font-normal text-[18px] leading-[26px] tracking-[-0.001em]">
-          Elevate your site’s visibility effortlessly with AI, where smart
+          Elevate your site&lsquo;s visibility effortlessly with AI, where smart
           technology meets user-friendly SEO tools.
         </p>
         <Button color="primary" size="medium">

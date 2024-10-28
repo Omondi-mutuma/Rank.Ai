@@ -1,3 +1,14 @@
+import {
+  BarChartIcon,
+  BellIcon,
+  ListBulletIcon,
+  LockClosedIcon,
+  MagicWandIcon,
+  RocketIcon,
+  SymbolIcon,
+  TargetIcon,
+} from "@radix-ui/react-icons";
+
 interface NavLink {
   name: string;
   href: string;
@@ -100,8 +111,7 @@ export const features: FeaturesList[] = [
     subtitle:
       "Perform complex SEO audits and optimizations with a single click.",
     hasBackground: true,
-    className:
-      "col-span-2 bg-gradient-to-b from-bg-background to-custom-purple",
+    className: "col-span-2",
 
     imgHeight: 652,
     imgWidth: 1098,
@@ -131,5 +141,57 @@ export const features: FeaturesList[] = [
     imgWidth: 234,
     position: "flex justify-center items-center",
     id: "858",
+  },
+];
+
+export const integrations = [
+  {
+    icon: SymbolIcon,
+    title: "User-friendly dashboard",
+    subtitle:
+      "Perform complex SEO audits and optimizations with a single click.",
+  },
+  {
+    icon: ListBulletIcon,
+    title: "Content evaluation",
+    subtitle: "Simple corrections for immediate improvements.",
+  },
+  {
+    icon: MagicWandIcon,
+    title: "Link Optimization Wizard",
+    subtitle: "Guides you through the process of creating and managing links.",
+  },
+  {
+    icon: BarChartIcon,
+    title: "Visual reports",
+    subtitle: "Visual insights into your site's performance.",
+  },
+  {
+    icon: TargetIcon,
+    title: "SEO goal setting",
+    subtitle: "Helps you set and achieve SEO goals with guided assistance.",
+  },
+  {
+    icon: RocketIcon,
+    title: "One-click optimization",
+    subtitle:
+      "Perform complex SEO audits and optimizations with a single click.",
+  },
+  {
+    icon: MagicWandIcon,
+    title: "Smart Keyword Generator",
+    subtitle: "Automatic suggestions and the best keywords to target.",
+  },
+  {
+    icon: BellIcon,
+    title: "Automated alerts",
+    subtitle:
+      "Automatic notifications about your SEO health, including quick fixes.",
+  },
+  {
+    icon: LockClosedIcon,
+    title: "Competitor reports",
+    subtitle:
+      "Provides insights into competitors' keyword strategies and ranking.",
   },
 ];
