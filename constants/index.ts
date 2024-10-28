@@ -110,8 +110,8 @@ export const features: FeaturesList[] = [
   },
   {
     image: "/app-wide-3x1.png",
-    title: "SEO goal setting",
-    subtitle: "Helps you set and achieve SEO goals with guided assistance.",
+    title: "Visual reports",
+    subtitle: "Visual insights into your site’s performance.",
     hasBackground: true,
     className: "col-span-2",
 
@@ -122,9 +122,8 @@ export const features: FeaturesList[] = [
   },
   {
     image: "/3d-triangle.png",
-    title: "User-friendly dashboard",
-    subtitle:
-      "Perform complex SEO audits and optimizations with a single click.",
+    title: "Smart Keyword Generator",
+    subtitle: "Automatic suggestions and the best keywords to target.",
     hasBackground: false,
     className: "col-span-1",
 
