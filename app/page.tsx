@@ -1,5 +1,6 @@
 "use client";
 import Clients from "./components/Clients";
+import Features from "./components/Features";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 
@@ -95,6 +96,7 @@ export default function Home() {
         </div>
         <Hero />
         <Clients />
+        <Features />
       </main>
 
       <footer className="p-4 text-center">
