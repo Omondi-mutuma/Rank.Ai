@@ -43,7 +43,7 @@ const Testimonials: React.FC = () => {
           className="w-full"
         />
 
-        <div className="absolute top-1/2 right-10 transform -translate-y-1/2 w-max max-w-[60%] backdrop-blur-lg p-4 rounded-[10px] transition-all">
+        <div className="absolute top-1/2 right-10 transform -translate-y-1/2 w-max max-w-[60%] backdrop-blur-lg p-4 rounded-[12px] transition-all">
           <span className="flex font-medium lg:text-[23px] leading-[31px]">
             <QuoteIcon />
             This product has completely transformed how I manage my projects and
