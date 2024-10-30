@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+"use client";
+import React, { useState, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { HiMenu, HiX, HiChevronDown } from "react-icons/hi";
@@ -8,12 +9,12 @@ import Button from "./ui/Button";
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
+  const toggleMenu = useCallback(() => {
     setIsMenuOpen(!isMenuOpen);
-  };
+  }, [isMenuOpen]);
 
   return (
-    <header className="sticky top-0 border-b border-white border-opacity-15 flex items-center justify-between py-[13px] bg-black/90 lg:justify-center backdrop-blur-md z-50">
+    <header className="sticky w-full top-0 border-b border-white border-opacity-15 flex items-center justify-between py-[13px] bg-black/90 lg:justify-center backdrop-blur-md z-50">
       <div className="w-full logo">
         <a href="#">
           <Image src="/logo.svg" alt="Logo" width={39} height={38} priority />

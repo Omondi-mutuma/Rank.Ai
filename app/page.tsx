@@ -2,8 +2,6 @@
 import Clients from "./components/Clients";
 import CTA from "./components/CTA";
 import Features from "./components/Features";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Integrations from "./components/Integrations";
 import Pricing from "./components/Pricing";
@@ -11,9 +9,7 @@ import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
-    <div className="px-[20px] md:px-[80px] lg:[100px] min-h-screen flex flex-col">
-      <Header />
-
+    <div className="">
       <main className="flex flex-col justify-center items-center overflow-hidden">
         <div className="">
           <svg
@@ -107,8 +103,6 @@ export default function Home() {
         <Pricing />
         <CTA />
       </main>
-
-      <Footer />
     </div>
   );
 }

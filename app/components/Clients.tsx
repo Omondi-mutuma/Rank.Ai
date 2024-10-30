@@ -2,7 +2,7 @@ import { clients } from "@/constants";
 import Image from "next/image";
 import React from "react";
 
-const Clients: React.FC = () => {
+const Clients: React.FC = React.memo(() => {
   return (
     <section className="flex flex-col items-center text-center w-full py-10 gap-[40px]">
       <div>
@@ -27,6 +27,7 @@ const Clients: React.FC = () => {
       </div>
     </section>
   );
-};
+});
 
+Clients.displayName = "Clients";
 export default Clients;

@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
           width={356}
           height={257}
           className="block md:hidden" // Mobile image
-          loading="lazy"
+          priority
         />
         <Image
           src={"/app-desktop.png"}
