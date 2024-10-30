@@ -38,10 +38,8 @@ const Header: React.FC = () => {
         <Button>Join waitlist</Button>
       </div>
 
-      <div className="flex items-center gap-2 lg:hidden">
-        <Button className="text-sm" size="small">
-          Join waitlist
-        </Button>
+      <div className="w-full flex items-center gap-2 lg:hidden">
+        <Button className="w-full">Join waitlist</Button>
 
         <button className="text-2xl" onClick={toggleMenu} name="menu">
           {isMenuOpen ? <HiX size={32} /> : <HiMenu size={32} />}

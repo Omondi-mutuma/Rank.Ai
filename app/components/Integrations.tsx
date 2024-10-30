@@ -3,7 +3,7 @@ import React from "react";
 
 const Integrations: React.FC = () => {
   return (
-    <section className="flex flex-col gap-[40px] py-[76px] px-[50px] w-full bg-gradient-to-br from-[#190D2E] to-[#020103] rounded-[10px]">
+    <section className="flex flex-col py-[76px] px-4 md:px-[50px] w-full bg-gradient-to-br from-[#190D2E] to-[#020103] rounded-[12px]">
       <h3 className="font-medium text-[26px] md:text-[56px] md:leading-[65px] leading-[28px] max-w-[360px]">
         Elevate your SEO efforts.
       </h3>

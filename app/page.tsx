@@ -1,9 +1,11 @@
 "use client";
 import Clients from "./components/Clients";
+import CTA from "./components/CTA";
 import Features from "./components/Features";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Integrations from "./components/Integrations";
+import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
 
 export default function Home() {
@@ -11,8 +13,8 @@ export default function Home() {
     <div className="px-[20px] md:px-[80px] lg:[100px] min-h-screen flex flex-col">
       <Header />
 
-      <main className="flex flex-col justify-center items-center">
-        <div className="w-full h-full">
+      <main className="flex flex-col justify-center items-center overflow-hidden">
+        <div className="">
           <svg
             width="1032"
             height="900"
@@ -101,6 +103,8 @@ export default function Home() {
         <Features />
         <Integrations />
         <Testimonials />
+        <Pricing />
+        <CTA />
       </main>
 
       <footer className="p-4 text-center">

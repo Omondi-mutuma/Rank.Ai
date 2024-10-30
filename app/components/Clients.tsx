@@ -14,7 +14,7 @@ const Clients: React.FC = () => {
         {clients.map((client) => (
           <div
             key={client.client}
-            className="flex justify-center px-[5px] lg:px-[40px] py-[32px] gap-[10px] rounded-[10px] border border-white/15 min-w-[175px] lg:min-w-[255px]"
+            className="flex justify-center px-[5px] lg:px-[40px] py-[32px] gap-[10px] rounded-[12px] border border-white/15 min-w-[175px] lg:min-w-[255px]"
           >
             <Image
               src={client.logo}

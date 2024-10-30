@@ -8,13 +8,13 @@ const BentoItem: React.FC = () => {
       {features.map((feature) => (
         <div
           key={feature.id}
-          className={`relative border border-white/15 rounded-[10px] min-h-[400px] p-[20px] ${feature.colSpan}`}
+          className={`relative border border-white/15 rounded-[12px] min-h-[400px] p-[20px] ${feature.colSpan}`}
           role="article" // Semantic role for accessibility
         >
           {feature.hasBackground && (
             <>
-              <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-b from-black to-custom-purple rounded-[10px] -z-10" />
-              <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-b from-transparent to-[#2b1747] via-[rgba(3,1,6,0)] rounded-[10px] z-10" />
+              <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-b from-black to-custom-purple rounded-[12px] -z-10" />
+              <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-b from-transparent to-[#2b1747] via-[rgba(3,1,6,0)] rounded-[12px] z-10" />
             </>
           )}
           <div className={`${feature.position} overflow-hidden`}>

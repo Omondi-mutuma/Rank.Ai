@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
       <div className="hidden lg:block absolute w-[569px] h-[569px] left-1/2 -top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-purple-900 filter blur-[60px]" />
       <div className="hidden lg:block absolute w-[269px] h-[269px] left-1/2 top-3/4 transform -translate-x-1/2 bg-purple-900 filter blur-[60px] -z-10" />
       {/* Image section */}
-      <div className="relative p-px flex justify-center items-center mt-5 bg-gradient-to-r from-[#0D0718] to-[#0B0614] border border-transparent rounded-[10px] shadow-[0px_-20px_70px_rgba(140,69,255,0.25)] shadow-[0px_-19px_70px_rgba(140,69,255,0.4)]">
+      <div className="relative p-px flex justify-center items-center mt-5 bg-gradient-to-r from-[#0D0718] to-[#0B0614] border border-transparent rounded-[12px] shadow-[0px_-20px_70px_rgba(140,69,255,0.25)] shadow-[0px_-19px_70px_rgba(140,69,255,0.4)]">
         <Image
           src={"/app-mobile.png"}
           alt="mobile view of app"
