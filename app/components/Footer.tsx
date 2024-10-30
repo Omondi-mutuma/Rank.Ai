@@ -95,6 +95,7 @@ const Footer: React.FC = () => {
                 width={logo.width}
                 height={logo.height}
                 alt="social media logo"
+                loading="lazy"
               />
             ))}
           </div>
