@@ -16,7 +16,7 @@ const Header: React.FC = () => {
     <header className="sticky top-0 border-b border-white border-opacity-15 flex items-center justify-between py-[13px] bg-black/90 lg:justify-center backdrop-blur-md z-50">
       <div className="w-full logo">
         <a href="#">
-          <Image src="/logo.svg" alt="Logo" width={39} height={38} priority />
+          <Image src="/logo.svg" alt="Logo" width={39} height={38} />
         </a>
       </div>
       <nav className="w-full border border-white border-opacity-15 rounded-full hidden lg:block">

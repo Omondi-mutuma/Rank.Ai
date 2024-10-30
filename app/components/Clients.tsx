@@ -4,7 +4,7 @@ import React from "react";
 
 const Clients: React.FC = () => {
   return (
-    <section className=" flex flex-col items-center text-center w-full py-10 gap-[40px]">
+    <section className="flex flex-col items-center text-center w-full py-10 gap-[40px]">
       <div>
         <span className="text-[16px] font-normal">
           Trusted by the world’s most innovative teams
@@ -14,14 +14,13 @@ const Clients: React.FC = () => {
         {clients.map((client) => (
           <div
             key={client.client}
-            className="flex justify-center px-[5px] lg:px-[40px] py-[32px] gap-[10px] rounded-[12px] border border-white/15 min-w-[175px] lg:min-w-[255px]"
+            className="flex justify-center px-[5px] lg:px-[40px] py-[32px] gap-[10px] rounded-[10px] border border-white/5 min-w-[175px] lg:min-w-[255px]"
           >
             <Image
               src={client.logo}
               alt="client logo"
               width={client.width}
               height={client.height}
-              loading="lazy"
             />
           </div>
         ))}

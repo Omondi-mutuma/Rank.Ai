@@ -45,7 +45,7 @@ const Testimonials: React.FC = () => {
           loading="lazy"
         />
 
-        <div className="absolute top-1/2 right-10 transform -translate-y-1/2 w-max max-w-[60%] backdrop-blur-lg p-4 rounded-[12px] transition-all">
+        <div className="absolute top-1/2 right-10 transform -translate-y-1/2 w-max max-w-[60%] backdrop-blur-lg p-4 rounded-[10px] transition-all">
           <span className="flex font-medium lg:text-[23px] leading-[31px]">
             <QuoteIcon />
             This product has completely transformed how I manage my projects and
@@ -60,7 +60,7 @@ const Testimonials: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="absolute bottom-20 left-0 h-[250px] w-[315px] bg-[#8C45FF]/50 blur-[127px] -z-10" />
+      <div className="absolute bottom-20 left-0 h-[200px] w-[200px] md:top-1/2 bg-[#8C45FF]/50 blur-[100px] -z-10" />
     </section>
   );
 };

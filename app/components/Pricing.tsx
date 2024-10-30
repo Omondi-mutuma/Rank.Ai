@@ -52,9 +52,9 @@ const pricing: PricingProps[] = [
 
 const Pricing: React.FC = () => {
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-[14px] overflow-hidden">
-      <div className="flex flex-col gap-[10px] text-center">
-        <h3 className="font-medium text-[26px]">Pricing</h3>
+    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-[20px] overflow-hidden">
+      <div className="flex flex-col gap-[10px] text-center md:max-w-[30%]">
+        <h3 className="font-medium text-[26px] md:text-[56px]">Pricing</h3>
         <p className="font-normal text-[18px] leading-[31px]">
           Choose the right plan to meet your SEO needs and start optimizing
           today.
@@ -72,7 +72,7 @@ const Pricing: React.FC = () => {
         {pricing.map((price) => (
           <div
             key={price.price}
-            className="relative w-full max-h-max flex flex-col items-center gap-[20px] border border-white/15 rounded-[12px] p-5"
+            className="relative w-full max-h-max flex flex-col items-center gap-[20px] border border-white/5 rounded-[12px] p-5"
           >
             <div className="self-start">
               <h5 className="font-medium text-[24px]">{price.heading}</h5>
@@ -112,7 +112,7 @@ const Pricing: React.FC = () => {
           </div>
         ))}
       </div>
-      <div className="absolute top-1/2 left-1/2 h-[500px] transform -translate-x-1/2 -translate-y-1/2  w-[315px] bg-[#8C45FF]/50 blur-[127px] -z-20" />
+      <div className="absolute top-1/2 left-1/2 h-[300px] transform -translate-x-1/2 -translate-y-1/2  w-[315px] bg-[#8C45FF]/50 blur-[127px] -z-20" />
     </section>
   );
 };

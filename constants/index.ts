@@ -146,10 +146,10 @@ export const features: FeaturesList[] = [
 
 export const integrations = [
   {
-    icon: SymbolIcon,
-    title: "User-friendly dashboard",
+    icon: SymbolIcon, // Icon component for the integration
+    title: "User-friendly dashboard", // Title of the integration
     subtitle:
-      "Perform complex SEO audits and optimizations with a single click.",
+      "Perform complex SEO audits and optimizations with a single click.", // Description of the integration
   },
   {
     icon: ListBulletIcon,

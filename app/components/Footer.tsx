@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import React from "react";
 
@@ -71,7 +72,7 @@ export const footerLinks: FooterLinkCategory[] = [
 
 const Footer: React.FC = () => {
   return (
-    <footer className="border-t border-white/15 p-[45px]">
+    <footer className="border-t border-white/5 p-[45px]">
       <div className="flex flex-col lg:flex-row lg:gap-[30px]">
         {/* Top part */}
         <div className="flex w-full justify-between lg:flex-col ">
@@ -88,13 +89,12 @@ const Footer: React.FC = () => {
           {/* Social media LOgos */}
           <div className="flex gap-4 ">
             {logos.map((logo) => (
-              <Image
+              <img
                 key={logo.name}
                 src={logo.logoPath}
                 width={logo.width}
                 height={logo.height}
                 alt="social media logo"
-                loading="lazy"
               />
             ))}
           </div>
