@@ -1,6 +1,5 @@
 import { features } from "@/constants";
 import Image from "next/image";
-import React from "react";
 
 const BentoItem: React.FC = () => {
   return (

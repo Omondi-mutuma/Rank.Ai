@@ -1,5 +1,4 @@
 import { CheckIcon } from "@radix-ui/react-icons";
-import React from "react";
 import Button from "./ui/Button";
 import Image from "next/image";
 

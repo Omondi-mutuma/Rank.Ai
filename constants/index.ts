@@ -95,13 +95,13 @@ export const clients: ClientList[] = [
 
 export const features: FeaturesList[] = [
   {
-    image: "/visual.png",
+    image: "/holo-star.svg",
     title: "SEO goal setting",
     subtitle: "Helps you set and achieve SEO goals with guided assistance.",
     hasBackground: false,
     colSpan: "col-span-1 sm:col-span-1",
-    imgHeight: 206,
-    imgWidth: 276,
+    imgHeight: 2550,
+    imgWidth: 2550,
     position: "flex justify-center items-center",
     id: "786",
   },
