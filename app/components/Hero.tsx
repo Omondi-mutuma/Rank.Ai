@@ -37,6 +37,7 @@ const Hero: React.FC = () => {
           width={356}
           height={257}
           className="md:hidden"
+          loading="lazy"
         />
         <Image
           src={"/app-desktop.png"}
@@ -44,6 +45,7 @@ const Hero: React.FC = () => {
           width={1098}
           height={658}
           className="hidden md:block"
+          loading="lazy"
         />
         <div className="absolute -bottom-5 left-0 h-full w-full bg-gradient-to-b from-transparent to-[#050208] via-transparent z-10" />
       </div>

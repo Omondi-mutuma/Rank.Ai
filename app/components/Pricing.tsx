@@ -52,7 +52,7 @@ const pricing: PricingProps[] = [
 
 const Pricing: React.FC = () => {
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-[14px]">
+    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-[14px] overflow-hidden">
       <div className="flex flex-col gap-[10px] text-center">
         <h3 className="font-medium text-[26px]">Pricing</h3>
         <p className="font-normal text-[18px] leading-[31px]">
@@ -104,6 +104,7 @@ const Pricing: React.FC = () => {
                   alt=""
                   layout="fill"
                   className="absolute bottom-0 left-0 opacity-50 -z-10"
+                  loading="lazy"
                 />
                 <div className="absolute top-1/2 left-1/2 h-[500px] transform -translate-x-1/2 -translate-y-1/2  w-[315px] bg-[#8C45FF]/50 blur-[127px] -z-20" />
               </>

@@ -36,7 +36,9 @@ const CTA: React.FC = () => {
               className="bg-transparent rounded-[12px] border border-white/15 px-[18px] py-[15px] lg:border-transparent outline-none"
               placeholder="Your email address"
             />
-            <Button color="primary">Join waitlist</Button>
+            <Button color="primary" className="w-full">
+              Join waitlist
+            </Button>
           </div>
           <p className="text-[16px] text-white/50">
             No credit card required | 7-days free trial

@@ -2,6 +2,7 @@
 import Clients from "./components/Clients";
 import CTA from "./components/CTA";
 import Features from "./components/Features";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Integrations from "./components/Integrations";
@@ -107,9 +108,7 @@ export default function Home() {
         <CTA />
       </main>
 
-      <footer className="p-4 text-center">
-        {/* Add your footer content here */}
-      </footer>
+      <Footer />
     </div>
   );
 }

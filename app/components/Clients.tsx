@@ -21,6 +21,7 @@ const Clients: React.FC = () => {
               alt="client logo"
               width={client.width}
               height={client.height}
+              loading="lazy"
             />
           </div>
         ))}
