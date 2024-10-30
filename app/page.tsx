@@ -4,6 +4,7 @@ import Features from "./components/Features";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Integrations from "./components/Integrations";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
@@ -99,6 +100,7 @@ export default function Home() {
         <Clients />
         <Features />
         <Integrations />
+        <Testimonials />
       </main>
 
       <footer className="p-4 text-center">
