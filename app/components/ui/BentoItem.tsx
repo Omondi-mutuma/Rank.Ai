@@ -1,25 +1,14 @@
+import { features } from "@/constants";
 import Image from "next/image";
 import React from "react";
 
-interface Feature {
-  id: string; // Assuming each feature has a unique ID
-  title: string;
-  subtitle: string;
-  image: string;
-  imgWidth: number;
-  imgHeight: number;
-  hasBackground: boolean;
-  className?: string;
-  position?: string;
-}
-
-const BentoItem: React.FC<{ features: Feature[] }> = ({ features }) => {
+const BentoItem: React.FC = () => {
   return (
     <>
       {features.map((feature) => (
         <div
           key={feature.id}
-          className={`relative col-span- border border-white/15 rounded-[10px] min-h-[400px] p-[20px] ${feature.className} overflow-hidden transition-transform duration-300 `}
+          className={`relative border border-white/15 rounded-[10px] min-h-[400px] p-[20px] ${feature.colSpan}`}
           role="article" // Semantic role for accessibility
         >
           {feature.hasBackground && (
@@ -36,7 +25,7 @@ const BentoItem: React.FC<{ features: Feature[] }> = ({ features }) => {
               height={feature.imgHeight}
               className={`${
                 feature.hasBackground &&
-                "absolute bottom-0 -right-[20px] md:top-[20px] md:left-[20px]"
+                "absolute top-10 -right-[20px] md:top-[20px] md:left-[20px]"
               }`}
               loading="lazy" // Lazy loading for performance
             />

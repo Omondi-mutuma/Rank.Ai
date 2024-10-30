@@ -30,7 +30,7 @@ interface FeaturesList {
   imgWidth: number;
   imgHeight: number;
   hasBackground: boolean;
-  className?: string;
+  colSpan?: string;
   position?: string;
 }
 
@@ -99,7 +99,7 @@ export const features: FeaturesList[] = [
     title: "SEO goal setting",
     subtitle: "Helps you set and achieve SEO goals with guided assistance.",
     hasBackground: false,
-    className: "col-span-1",
+    colSpan: "col-span-1 sm:col-span-1",
     imgHeight: 206,
     imgWidth: 276,
     position: "flex justify-center items-center",
@@ -111,7 +111,7 @@ export const features: FeaturesList[] = [
     subtitle:
       "Perform complex SEO audits and optimizations with a single click.",
     hasBackground: true,
-    className: "col-span-2",
+    colSpan: "col-span-2",
 
     imgHeight: 652,
     imgWidth: 1098,
@@ -121,9 +121,9 @@ export const features: FeaturesList[] = [
   {
     image: "/app-wide-3x1.png",
     title: "Visual reports",
-    subtitle: "Visual insights into your site’s performance.",
+    subtitle: "Visual insights into your sites performance.",
     hasBackground: true,
-    className: "col-span-2",
+    colSpan: "col-span-2",
 
     imgHeight: 354,
     imgWidth: 633,
@@ -135,7 +135,7 @@ export const features: FeaturesList[] = [
     title: "Smart Keyword Generator",
     subtitle: "Automatic suggestions and the best keywords to target.",
     hasBackground: false,
-    className: "col-span-1",
+    colSpan: "col-span-1",
 
     imgHeight: 244,
     imgWidth: 234,
