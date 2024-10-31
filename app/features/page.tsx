@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "../components/ui/BentoItem";
 import {
@@ -16,7 +17,7 @@ export default function Features() {
           and effective for all skill levels.
         </h2>
       </div>
-      <BentoGrid className="w-full mx-auto ">
+      <BentoGrid className="w-full mx-auto md:auto-rows-[20rem]">
         {items.map((item, i) => (
           <BentoGridItem
             key={i}
@@ -26,8 +27,7 @@ export default function Features() {
             imgWidth={item.imgWidth}
             className={item.className}
             icon={item.icon}
-            imgHeight={item.imgHeight}
-            hasBackground={item.hasBackground}
+            imgHeight={0}
           />
         ))}
       </BentoGrid>
@@ -39,9 +39,19 @@ export default function Features() {
 // );
 const items = [
   {
-    image: "/3d-triangle.png",
-    imgHeight: 244,
-    imgWidth: 234,
+    image: "/holo-star.svg",
+    imgHeight: 2550,
+    imgWidth: 2550,
+    title: "SEO goal setting",
+    description: "Helps you set and achieve SEO goals with guided assistance.",
+    hasBackground: false,
+    className: "md:col-span-2",
+    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    image: "/app-desktop.png",
+    imgHeight: 652,
+    imgWidth: 1098,
     title: "User-friendly dashboard",
     description:
       "Perform complex SEO audits and optimizations with a single click.",
@@ -50,33 +60,23 @@ const items = [
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    image: "/app-desktop.png",
-    imgHeight: 652,
-    imgWidth: 1098,
-    title: "SEO goal setting",
-    description: "Helps you set and achieve SEO goals with guided assistance.",
-    hasBackground: false,
-    className: "md:col-span-2",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
-  },
-  {
     image: "/app-wide-3x1.png",
     imgHeight: 354,
     imgWidth: 633,
-    title: "Smart Keyword Generator",
-    description: "Automatic suggestions and the best keywords to target.",
-    hasBackground: false,
-    className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    image: "/3d-triangle.png",
-    imgHeight: 244,
-    imgWidth: 234,
     title: "Visual reports",
     description: "Visual insights into your sites performance.",
     hasBackground: true,
     className: "md:col-span-1",
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    image: "/3d-triangle.png",
+    imgHeight: 244,
+    imgWidth: 234,
+    title: "Smart Keyword Generator",
+    description: "Automatic suggestions and the best keywords to target.",
+    hasBackground: false,
+    className: "md:col-span-2",
+    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
 ];

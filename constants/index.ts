@@ -22,24 +22,13 @@ interface ClientList {
   height: number;
 }
 
-interface FeaturesList {
-  id: string; // Assuming each feature has a unique ID
-  title: string;
-  subtitle: string;
-  image: string;
-  imgWidth: number;
-  imgHeight: number;
-  hasBackground: boolean;
-  colSpan?: string;
-  position?: string;
-}
-
 export const navLinks: NavLink[] = [
   { name: "Features", href: "/features", hasDropdown: true },
   { name: "Developers", href: "/developers" },
   { name: "Company", href: "/company", hasDropdown: true },
   { name: "Blog", href: "/blog" },
   { name: "Changelog", href: "/changelog" },
+  { name: "Waitlist", href: "/waitlist" },
 ];
 
 export const clients: ClientList[] = [

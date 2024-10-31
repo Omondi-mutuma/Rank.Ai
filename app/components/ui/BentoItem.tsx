@@ -1,46 +1,70 @@
-import { features } from "@/constants";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-const BentoItem: React.FC = () => {
+export const BentoGrid = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children?: React.ReactNode;
+}) => {
   return (
-    <>
-      {features.map((feature) => (
-        <div
-          key={feature.id}
-          className={`relative border border-white/5 rounded-[10px] min-h-[400px] p-[20px] ${feature.colSpan}`}
-          role="article"
-        >
-          {feature.hasBackground && (
-            <>
-              <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-b from-black to-custom-purple rounded-[10px] -z-10" />
-              <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-b from-transparent to-[#2b1747] via-[rgba(3,1,6,0)] rounded-[10px] z-10" />
-            </>
-          )}
-          <div className={`${feature.position} overflow-hidden`}>
-            <Image
-              src={feature.image}
-              alt={feature.title}
-              width={feature.imgWidth}
-              height={feature.imgHeight}
-              className={`${
-                feature.hasBackground &&
-                "absolute top-10 -right-[20px] md:top-[20px] md:left-[20px]"
-              }`}
-              loading="lazy"
-            />
-          </div>
-          <div className="absolute bottom-0 pb-[20px] z-20">
-            <h4 className="font-medium text-[16px] leading-[32px] mt-2">
-              {feature.title}
-            </h4>
-            <p className="font-normal text-[16px] leading-[29px] text-white/70 mt-2">
-              {feature.subtitle}
-            </p>
-          </div>
-        </div>
-      ))}
-    </>
+    <div
+      className={cn(
+        "grid  grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ",
+        className
+      )}
+    >
+      {children}
+    </div>
   );
 };
 
-export default BentoItem;
+export const BentoGridItem = ({
+  className,
+  title,
+  description,
+  imgPath,
+  imgWidth,
+  imgHeight,
+  icon,
+  hasBackground,
+}: {
+  imgWidth: number;
+  imgHeight: number;
+  className?: string;
+  title?: string | React.ReactNode;
+  description?: string | React.ReactNode;
+  imgPath?: string;
+  header?: React.ReactNode;
+  icon?: React.ReactNode;
+  hasBackground?: boolean;
+}) => {
+  return (
+    <div
+      className={`
+        row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input p-4  border border-white/15 justify-between flex flex-col space-y-4
+        ${className} ${
+        hasBackground ? (
+          <div className="absolute top-0 left-0 h-full w-full bg-white" />
+        ) : (
+          ""
+        )
+      }`}
+    >
+      {imgPath && (
+        <Image src={imgPath} alt="" width={imgWidth} height={imgHeight} />
+      )}
+      <div className="group-hover/bento:translate-x-2 transition duration-200">
+        {icon}
+        <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
+          {title}
+        </div>
+        <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
+          {description}
+        </div>
+      </div>
+      {}
+    </div>
+  );
+};
