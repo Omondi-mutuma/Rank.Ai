@@ -82,57 +82,6 @@ export const clients: ClientList[] = [
   },
 ];
 
-export const features: FeaturesList[] = [
-  {
-    image: "/holo-star.svg",
-    title: "SEO goal setting",
-    subtitle: "Helps you set and achieve SEO goals with guided assistance.",
-    hasBackground: false,
-    colSpan: "col-span-1 sm:col-span-1",
-    imgHeight: 2550,
-    imgWidth: 2550,
-    position: "flex justify-center items-center",
-    id: "786",
-  },
-  {
-    image: "/app-desktop.png",
-    title: "User-friendly dashboard",
-    subtitle:
-      "Perform complex SEO audits and optimizations with a single click.",
-    hasBackground: true,
-    colSpan: "col-span-2",
-
-    imgHeight: 652,
-    imgWidth: 1098,
-    position: "absolute bottom-0 right-0 h-full w-full",
-    id: "7967",
-  },
-  {
-    image: "/app-wide-3x1.png",
-    title: "Visual reports",
-    subtitle: "Visual insights into your sites performance.",
-    hasBackground: true,
-    colSpan: "col-span-2",
-
-    imgHeight: 354,
-    imgWidth: 633,
-    position: "absolute top-[20px] left-0 h-full w-full",
-    id: "869",
-  },
-  {
-    image: "/3d-triangle.png",
-    title: "Smart Keyword Generator",
-    subtitle: "Automatic suggestions and the best keywords to target.",
-    hasBackground: false,
-    colSpan: "col-span-1",
-
-    imgHeight: 244,
-    imgWidth: 234,
-    position: "flex justify-center items-center",
-    id: "858",
-  },
-];
-
 export const integrations = [
   {
     icon: SymbolIcon, // Icon component for the integration
